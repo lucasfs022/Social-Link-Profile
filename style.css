@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* ---> Basic Reset <--- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --green: #C4F82A;
+    --white: #fff;
+    --grey-900: #141414;
+    --grey-800: #1F1F1F;
+    --grey-700: #333;
+    --font-family: "Inter", sans-serif;
+    --font-title: 24px;
+    --font-text: 14px;
+    --typography-lh: 150%;
+    --bold: 700;
+    --semi-bold: 600;
+    --regular: 400;
+
+}
+
+/* ---> General Styles <--- */
+body,
+main {
+    display: flex;
+    align-items: center;
+}
+
+body {
+    flex-direction: column;
+    font-family: var(--font-family);
+    color: var(--white);
+    text-align: center;
+    line-height: var(--typography-lh);
+    padding: 0 24px;
+    background-color: var(--grey-900);
+}
+
+main {
+    height: 96vh;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    font-size: var(--font-text);
+    text-decoration: none;
+    color: var(--white);
+}
+
+h1 {
+    font-size: var(--font-title);
+    font-weight: var(--semi-bold);
+    margin-bottom: 4px;
+}
+
+
+
+p {
+    font-size: var(--font-text);
+}
+
+/* ---> Social Link Profile <--- */
+.social-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 40px;
+    background-color: var(--grey-800);
+    border-radius: 12px;
+    width: 384px;
+}
+
+@media (max-width: 767px) {
+    .social-container {
+        width: 100%;
+        padding: 24px;
+    }
+}
+
+.social-image img {
+    border-radius: 100%;
+    max-width: 88px;
+}
+
+.social-info p {
+    color: var(--green);
+    font-weight: var(--bold);
+}
+
+.social-links-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.social-link {
+    padding: 12px;
+    border-radius: 8px;
+    background-color: var(--grey-700);
+    font-weight: var(--bold);
+
+}
+
+.social-link:hover {
+    background-color: var(--green);
+    color: var(--grey-700);
+    transition: background-color 1s ease;
+}
+
+.attribution {
+    font-size: var(--font-text);
+}
+
+.attribution a {
+    color: var(--green);
+}
