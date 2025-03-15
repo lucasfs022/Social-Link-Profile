@@ -105,13 +105,12 @@ p {
     border-radius: 8px;
     background-color: var(--grey-700);
     font-weight: var(--bold);
-
+    transition: 0.8s ease;
 }
 
 .social-link:hover {
     background-color: var(--green);
     color: var(--grey-700);
-    transition: background-color 1s ease;
 }
 
 .attribution {
